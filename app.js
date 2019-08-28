@@ -8,8 +8,6 @@ collectDefaultMetrics({ timeout: 5000 })
 var express = require('express');
 var app = express();
 
-const delay = require('delay');
-
 var timer_http_request = new prom.Summary({
   name: 'timer_http_request',
   help: 'Time http request',
